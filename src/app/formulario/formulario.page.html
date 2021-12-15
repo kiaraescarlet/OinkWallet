@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button color="#222428" slot="start" size="small">
+      <ion-back-button style="color:#ffc409;" defaultHref="/"></ion-back-button>
+    </ion-button>
+    <ion-title size="small" color="warning" slot=""> OinkWallet </ion-title>
+  </ion-toolbar>
+  <ion-card>
+    <ion-card-header style="text-align: center;">
+      <img src="assets/img/usuario.png" width="70 px">
+      <ion-card-title color="warning">Registrarse</ion-card-title>
+      
+  </ion-card-header>
+  </ion-card>
+<ion-card>
+  <form style="text-align: center;" action="">
+    <br>
+    <label style="color: #ffc409;" for="Nombre">Nombre Completo</label><br>
+    <input type="text" id="Nombre" name="Nombre"><br>
+    <br>
+
+    <label style="color: #ffc409;" for="email">Correo</label><br>
+    <input type="text" id="email" name="email"><br>
+    <br>
+
+    <label style="color: #ffc409;" for="contraseña">Contraseña</label><br>
+    <input type="text" id="contraseña" name="contraseña"><br>
+    <br>
+   
+    <ion-button  [routerLink]="['/paginainicial'] " color="warning"size="small">Registrarse</ion-button><br>
+    <br>
+
+ 
+  </form>
+</ion-card>
+</ion-header>

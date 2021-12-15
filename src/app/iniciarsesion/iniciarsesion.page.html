@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button color="#222428" slot="start" size="small">
+      <ion-back-button style="color:#ffc409;" defaultHref="/"></ion-back-button>
+    </ion-button>
+    <ion-title size="small" color="warning" >
+     OinkWallet
+    </ion-title>
+  </ion-toolbar>
+  <ion-card>
+    <ion-card-header style="text-align: center;">
+      <img src="assets/img/user.png" width="70 px">
+      <ion-card-title color="warning">Inicio sesion</ion-card-title>
+      <ion-card-subtitle color="warning">Ingrese sus datos</ion-card-subtitle>
+  </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <form style="text-align: center;" action="">
+      <br>
+      <label style="color: #ffc409;"for="email">Email</label><br>
+      <input type="text" id="email" name="email"><br>
+      <br>
+      <label style="color: #ffc409;"for="contraseña">Contraseña</label><br>
+      <input type="text" id="contraseña" name="contraseña"><br>
+      <a id="url" href="url">¿Has olvidado la contraseña?</a><br>
+       <ion-button [routerLink]="['/paginainicial']" routerLinkActive="router-link-active" color="warning"size="small">Entrar</ion-button><br>
+      <br>
+
+
+    </form>
+  </ion-card>
+  
+</ion-header>

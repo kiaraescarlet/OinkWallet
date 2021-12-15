@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button color="#222428" slot="start" size="small">
+      <ion-back-button style="color:#ffc409;" defaultHref="/"></ion-back-button>
+    </ion-button>
+    <ion-title size="small" color="warning" slot="">Abrir Cuenta Corriente
+    </ion-title>
+  </ion-toolbar>
+   
+  <ion-card>
+    <form style="text-align: center;" action="">
+      <br>
+      <label style="color: #ffc409;" for="Nombre">Nombre de cuenta </label><br>
+      <input type="text" id="Nombre" name="Nombre"><br>
+      <br>
+  
+      <label style="color: #ffc409;" for="descripcion">descripcion</label><br>
+      <input type="text" id="descripcion" name="descripcion"><br>
+      <br>
+  
+      <label style="color: #ffc409;" for="monto">monto</label><br>
+      <input type="text" id="monto" name="monto"><br>
+      <br>
+     
+      <ion-button  [routerLink]="['/paginainicial'] " color="warning"size="small">Crear</ion-button><br>
+      <br>
+  
+   
+    </form>
+  </ion-card>
